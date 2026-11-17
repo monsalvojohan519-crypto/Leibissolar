@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos - Exploración del Sistema Solar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">🚀 COSMOS</div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#planetas">Planetas</a>
+            <a href="#calculadora">Tu Peso Espacial</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section id="inicio" class="hero">
+        <h1>Explora el Sistema Solar</h1>
+        <p>Un viaje por los mundos que orbitan nuestra estrella, desde los planetas rocosos hasta los gigantes helados.</p>
+        <a href="#planetas" class="btn-neon">Iniciar Viaje</a>
+    </section>
+
+    <!-- CUADRÍCULA DE PLANETAS -->
+    <section id="planetas" class="contenedor">
+        <h2>Planetas Destacados</h2>
+        
+        <div class="grid-planetas">
+            <div class="card-planeta">
+                <span class="etiqueta">Planeta Rocoso</span>
+                <h3>🔴 Marte</h3>
+                <p>Conocido como el planeta rojo por el óxido de hierro en su superficie. Posee el volcán más grande del sistema solar: el Monte Olimpo.</p>
+            </div>
+
+            <div class="card-planeta">
+                <span class="etiqueta">Gigante Gaseoso</span>
+                <h3>🟠 Júpiter</h3>
+                <p>El planeta más grande de todos. Es tan masivo que cabrían más de 1,300 Tierras en su interior y tiene una tormenta gigante llamada la Gran Mancha Roja.</p>
+            </div>
+
+            <div class="card-planeta">
+                <span class="etiqueta">Anillos Majestuosos</span>
+                <h3>🪐 Saturno</h3>
+                <p>Famoso por su brillante sistema de anillos compuestos por miles de millones de fragmentos de hielo y roca.</p>
+            </div>
+
+            <div class="card-planeta">
+                <span class="etiqueta">Gigante de Hielo</span>
+                <h3>🔵 Neptuno</h3>
+                <p>El planeta más lejano del Sol. Tiene los vientos supersónicos más fuertes del sistema solar, alcanzando más de 2,000 km/h.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERRAMIENTA INTERACTIVA -->
+    <section id="calculadora" class="seccion-calc">
+        <div class="contenedor">
+            <h2>⚖️ Calculadora de Peso Espacial</h2>
+            <p>La gravedad cambia en cada planeta. Escribe tu peso en la Tierra (en kg) para calcular cuánto pesarías allí:</p>
+            
+            <div class="calc-box">
+                <input type="number" id="pesoInput" placeholder="Ej: 60" min="1">
+                <button onclick="calcularPeso()">Calcular</button>
+            </div>
+
+            <div id="resultados" class="resultados-grid">
+                <!-- Aquí aparecerán los resultados con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Desarrollado por mí • Proyecto Web Tema Libre (2026)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
